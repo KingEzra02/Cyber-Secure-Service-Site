@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/Bc.png" />
+    <title>Bout Cyber</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/cyber.png" alt="" width="150" height="90" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactUs">Contact Us</a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- Register -->
+    <section class="register bg-primary py-6 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Unlock Your Potential with Engaging Cybersecurity Content</h2>
+            <p>
+              Our comprehensive training and seminar videos are designed to
+              equip you with essential knowledge and skills in cybersecurity.
+            </p>
+
+            <ul class="list-unstyled vstack gap-3">
+              <li>
+                <i class="fas fa-shield-alt"></i>
+                <strong>Gain Expertise:</strong> Our videos offer in-depth
+                insights and practical tips to enhance your expertise in various
+                cybersecurity domains.
+              </li>
+              <li>
+                <i class="fas fa-shield-alt"></i>
+                <strong>Stay Updated:</strong> Stay up-to-date with the latest
+                cybersecurity trends and advancements through our informative
+                and current videos.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 p-4">
+              
+              <form action="UserAccountSerlet.do" method="POST">
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Enter Names"
+                  name="name"
+                />
+              </div>
+
+              <div class="my-4">
+                <input
+                  type="email"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Enter email"
+                  name="email"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Organizations"
+                  name="org"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="password"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Enter password"
+                  name="pwd"
+                  required=""
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Enter Phone number"
+                  name="cellNum"
+                />
+              </div>
+              <div class="my-4">
+                  <select name="country">
+                      <option value="Afganisten">Afganisten</option>
+                      <option value="America">America</option>
+                      <option value="Australia">Australia</option>
+                      <option value="England">England</option>
+                      <option value="France">France</option>
+                      <option value="Germany">Germany</option>
+                      <option value="South Africa">South Africa</option>
+                  </select>
+              </div>
+              <div class="form-check">
+                  <input type="checkbox" class="form-check-input" value="" required="" />
+                <label for="terms" class="form-check-label">
+                  I agree to the terms and conditions
+                  <a class="bg-secondary" href="terms_conditions.html"
+                    >terms & conditions</a
+                  >
+                  OR
+                </label>
+                <a href="logIn.html" class="bg-secondary">Sign In</a>
+              </div>
+              <div class="d-grid mt-4">
+                <button class="btn btn-outline-dark">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer mt-4 text-bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Lorem Ipsum</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+              possimus aliquid omnis commodi. Dignissimos, quam obcaecati? Fugit
+              non ex repellendus?
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="about_us.html">About us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Connect</h5>
+            <div class="d-flex gap-3">
+              <a href="#"><i class="fab fa-facebook fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-linkedin fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-3x text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="images/Bc.png" />
+        <style>
+            .profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Ensure it's square to maintain aspect ratio */
+}
+
+.user-name {
+    margin: 0;
+    font-size: 0.875rem; /* Adjust size as needed */
+}
+
+.user-location {
+    margin: 0;
+    font-size: 0.75rem; /* Adjust size as needed */
+}
+
+.badge-container .badge {
+    margin-top: 0.25rem; /* Add spacing between badges */
+    font-size: 0.75rem; /* Adjust size as needed */
+}
+
+@media (max-width: 576px) {
+    .profile-img {
+        width: 30px; /* Smaller size for smaller screens */
+        height: 30px;
+    }
+
+    .user-name {
+        font-size: 0.75rem;
+    }
+
+    .user-location {
+        font-size: 0.625rem;
+    }
+
+    .badge-container .badge {
+        font-size: 0.625rem;
+    }
+}
+
+        </style>
+      
+    </head>
+    <body >
+                <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container">
+              <a href="index.html" class="navbar-brand">
+                <img src="images/cyber.png" alt="" width="150" height="90" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#si">Scientific Insights</a>
+                      <a class="dropdown-item" href="#ca">Cybersecurity Awareness</a>
+                      <a class="dropdown-item" href="#iu">Industry Updates</a>
+                      <a class="dropdown-item" href="#cn">Collaborative Networking</a>
+                      <a class="dropdown-item" href="#po">Partnership Opportunities</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#ddi">Data-driven Insights</a>
+                      <a class="dropdown-item" href="#cs">Custom Solutions</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html" class="btn btn-outline-dark text-uppercase">Sign Out</a>
+                  </li>
+                </ul>
+                <div class="profile-container d-flex align-items-center ms-3">
+                  <div class="user-icon">
+                    <i class="fas fa-user profile-icon"></i>
+                  </div>
+                  <div class="user-info ms-2">
+                    <h6 class="user-name mb-0">Khosi Princess</h6>
+                    <p class="user-location mb-0">Jo'burg</p>
+                    <div class="badge-container mt-1">
+                      <span class="badge bg-primary">Tshwane University of Technology</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        
+          <!-- Project Modals -->
+    <div class="project-modals">
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Orkla Foods</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 2 -->
+       <div id="modal2" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>First Bank</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 3 -->
+       <div id="modal3" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>All Sweets</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 4 -->
+       <div id="modal4" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Fast Courier</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 5 -->
+       <div id="modal5" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Lyra Market</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 6 -->
+       <div id="modal6" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-6.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Monday Stores</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
+        
+        
+        
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/script.js"></script>
+            <script src="js/replaceme.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
